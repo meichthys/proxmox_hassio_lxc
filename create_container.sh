@@ -151,7 +151,7 @@ MOUNT=$(pct mount $CTID | cut -d"'" -f 2)
 ln -fs $(readlink /etc/localtime) ${MOUNT}/etc/localtime
 pct unmount $CTID && unset MOUNT
 
-pause "Press [Enter] key to start backup..."
+sleep 1m
 
 # Setup container for Hass.io
 msg "Starting LXC container..."
