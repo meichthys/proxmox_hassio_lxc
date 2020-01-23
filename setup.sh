@@ -16,7 +16,7 @@ function msg() {
   local TEXT="$1"
   echo -e "$TEXT"
 }
-
+read -p "Press [Enter] key to start backup..."
 # Prepare container OS
 msg "Setting up container OS..."
 sed -i "/$LANG/ s/\(^# \)//" /etc/locale.gen
